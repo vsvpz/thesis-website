@@ -1,0 +1,114 @@
+    /* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-image: url("assets/photogram-riso-background.jpg");
+  background-size: cover, no-repeat;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+.instructions{
+  display: flex;
+  justify-content: center;
+  left:  0.15em;
+  z-index: 11;
+}
+
+.description{
+  position: absolute;
+  top: .5em;
+  right:  0.15em;
+  z-index:  11;
+  width:  30em;
+}
+
+h1{
+  color: white;
+  font-size: 2em;
+  font-family: 'Averia Libre', cursive;
+  padding:  0.15em;
+}
+
+p{
+  color: white;
+  font-size: 1em;
+  font-family: 'Averia Libre', cursive;
+}
+
+a{
+  color:  white;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+
+
+
+
+.first{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.first img{
+  max-width: 10em;
+}
+
+.second{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.second img{
+  max-width: 5em;
+}
+
+.overlay img{
+  max-width: 5em;
+}
+
+.overlay{
+  position: absolute;
+  top: 13em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7em;
+}
+
+.overlay-two img{
+  max-width: 5em;
+}
+
+.overlay-two{
+  position: absolute;
+  top: 8em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7em;
+  justify-content: flex-end;
+}
+
+
+
