@@ -32,10 +32,12 @@ video {
 
 .description{
   position: absolute;
-  top: .5em;
+  top: 5em;
   right:  0.15em;
   z-index:  11;
   width:  30em;
+  background-image: url("assets/photogram-riso-background.jpg");
+  padding: .75em;
 }
 
 h1{
