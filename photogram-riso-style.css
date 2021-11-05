@@ -39,31 +39,27 @@ video {
 }
 
 h1{
-  color: white;
+  color: black;
   font-size: 2em;
   font-family: 'Averia Libre', cursive;
   padding:  0.15em;
 }
 
 p{
-  color: white;
+  color: black;
   font-size: 1em;
   font-family: 'Averia Libre', cursive;
 }
 
 a{
-  color:  white;
+  color:  black;
   text-decoration: none;
 }
 
 a:hover{
   text-decoration: underline;
-  color: black;
+  color: white;
 }
-
-
-
-
 
 .first{
   display: flex;
