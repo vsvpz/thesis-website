@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Anthony";
+  src: url("./fonts/Anthony.woff2") format("woff2"),
+       url("./fonts/Anthony.woff") format("woff");
+}    
+    
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  background-color: blue;
+  margin: 0;
+}
+
+img{
+  max-width: 10em;
+}
+
+.original {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center; 
+  align-items: center;
+  padding: 2em;
+  margin-bottom: 0;
+  position: fixed;
+  top: 2em;
+  z-index: 1;
+}
+
+.original img{
+  max-width:12em;
+  max-height: 30em;
+  box-shadow: 5px 5px 5px black;
+}
+
+
+.original p{
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: yellow;
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
+.define{
+  background-image: url("assets/photogram-5.jpg");
+  background-size: cover;
+  margin-top: 40em;
+  height: 63em;
+  z-index: 4;
+}
+
+.define-text{
+  position: absolute;
+  top: 13em;
+  z-index: 5;
+}
+
+.define-text h1{
+  font-family: Anthony;
+  font-size: 19em;
+  color: yellow;
+  font-weight: 100;
+  margin-left: .05em;
+  margin-bottom: .25em;
+}
+
+.define-text p{
+  font-family: Anthony;
+  color: yellow;
+  font-size: 5em;
+  line-height: 1.25em;
+  max-width: 11em;
+  margin-left: .5em;
+  font-weight: 800;
+}
+
+.define-text h2{
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: yellow;
+  font-size: 1.25em;
+  line-height: 1em;
+  margin-left: 32em;
+}
+
+.scans{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(23)1fr;
+  justify-items: center; 
+  align-items: stretch;
+  padding: 2em;
+  background-color: yellow;
+}
+
+.scans img{
+  margin-left: 40em;
+  z-index: 7;
+  box-shadow: 5px 5px 5px black;
+}
+
+.composition-1 img{
+  max-width: 100%;
+}
+
+.composition-2 img{
+  max-width: 100%;
+}
+
+.composition-3 img{
+  max-width: 100%;
+}
