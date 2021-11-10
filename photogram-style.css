@@ -3,7 +3,33 @@
   src: url("./fonts/Anthony.woff2") format("woff2"),
        url("./fonts/Anthony.woff") format("woff");
 }    
-    
+
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }}
+
+
 /* default to border-box */
 html {
   box-sizing: border-box;
@@ -26,8 +52,10 @@ img{
 
 .original {
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "one two three . four";
+  grid-template-rows: auto;
   justify-items: center; 
   align-items: center;
   padding: 2em;
@@ -35,26 +63,49 @@ img{
   position: fixed;
   top: 2em;
   z-index: 1;
+  width: 100%;
+  padding-bottom: 100em;
 }
 
 .original img{
-  max-width:12em;
-  max-height: 30em;
+  max-height: 25em;
   box-shadow: 5px 5px 5px black;
 }
 
+.one{
+  grid-area: one;
+}
 
-.original p{
+.two{
+  grid-area: two;
+}
+
+.three{
+  grid-area: three;
+}
+
+.four{
+  grid-area: four;
+}
+
+.text-top{
+  height: 34em;
+}
+
+.text-top p{
   font-family: 'Zen Kurenaido', sans-serif;
   color: yellow;
   font-size: 1.25em;
   line-height: 1.25em;
+  grid-area: text;
+  margin-top: 5em;
+  margin-left: 60%;
+  width: 20%;
 }
 
 .define{
   background-image: url("assets/photogram-5.jpg");
   background-size: cover;
-  margin-top: 40em;
   height: 63em;
   z-index: 4;
 }
@@ -108,14 +159,86 @@ img{
   box-shadow: 5px 5px 5px black;
 }
 
-.composition-1 img{
-  max-width: 100%;
+
+.compositions img{
+  max-width: 50em;
+  padding: 4em;
+  z-index: 8;
+  position: relative;
 }
 
-.composition-2 img{
-  max-width: 100%;
+.compositions p{
+  display: inline-block;
+  font-family: Anthony;
+  font-size: 5em;
+  color: yellow;
+  font-weight: 100;
+  transform: rotate(60deg);
+  transform: skewX(20deg);
+  position: relative;
+  background-color: blue;
+  padding: 1em;
+  z-index: 8;
 }
 
-.composition-3 img{
-  max-width: 100%;
+.compositions{
+  padding-bottom: 30em;
+}
+
+.text-scans{
+  position: absolute;
+  top: 142em;
+  bottom: 200em;
+  margin-left: 5em;
+  font-weight: 800;
+  max-width: 55%;
+}
+
+.text-scans p{
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: blue;
+  font-size: 1.8em;
+  line-height: 2em;
+}
+
+span.scan-word{
+  font-family: Anthony;
+  font-size: 2.2em;
+  z-index: 7;
+}
+
+#banner{
+  height: 20em;
+  overflow: hidden;
+  border-radius: 3px solid yellow;
+  width:100%;
+}
+
+#banner h1{
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+  font-family: Anthony;
+  font-size: 4em;
+  color: yellow;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+a{
+  text-decoration: none;
+  font-family: Anthony;
+  font-size: 1em;
+  color: yellow;
+  font-weight: 100;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 16;
+  position: relative;
 }
