@@ -10,7 +10,7 @@ body {
 
 
 body{
-  background-image: url("assets/background-home.png");
+  background-image: url("assets/background-home2.png");
   background-size: cover;
   margin: 0;
 }
@@ -19,8 +19,14 @@ body{
   max-width: 100%;
   margin: 0;
   mix-blend-mode: normal;
-  cursor: url("assets/esc-button-02-copy.png"), auto;
+  cursor: url("assets/esc-button-02.png"), auto;
+  transform: scale(1);
 }
+
+.index img:hover{
+  transform: scale(.97);
+}
+
 
 .index{
   display: flex;
