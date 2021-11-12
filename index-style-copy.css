@@ -1,0 +1,32 @@
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+
+/* images and videos max out at full width */
+
+
+body{
+  background-image: url("assets/background-home.png");
+  background-size: cover;
+  margin: 0;
+}
+
+.index img{
+  max-width: 100%;
+  margin: 0;
+  mix-blend-mode: normal;
+  cursor: url("assets/esc-button-02-copy.png"), auto;
+}
+
+.index{
+  display: flex;
+  justify-items: center;
+  max-width: 100%;
+  justify-content: center;
+  transform: scale(.8);
+  margin-top: 0;
+}
