@@ -10,29 +10,25 @@
 body {
   margin: 1rem;
   font-family: sans-serif;
-  line-height: 1.5;
+  background-color: black;
 }
-
-img{
-  max-width: 10em;
-  margin: 1em;
-}
-
 
 a{
-  color: black;
-  text-decoration: underline;
-  font-size: 3em;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
   font-family: "Terminal Grotesque";
   line-height: 1.5em;
 }
 
 a:hover{
   color: blue;
+  text-decoration: underline;
 }
 
 .index{
   padding: 6em;
+  max-width: 98%;
 }
 
 .top-nav{
@@ -42,6 +38,7 @@ a:hover{
   top: 1em;
   right: 1em;
   left: 1em;
+  z-index: 100;
 }
 
 .bottom-nav{
@@ -52,5 +49,248 @@ a:hover{
   bottom: 1em;
   right: 1em;
   left: 1em;
+  z-index: 100;
 }
 
+.photogram img, video{
+  cursor: url("assets/project-cursor-03.png"), auto;
+}
+
+.photogram-riso img, video{
+  cursor: url("assets/project-cursor-04.png"), auto;
+}
+
+.kroy-wen-riso img, video{
+  cursor: url("assets/project-cursor-05.png"), auto;
+}
+
+.kroy-wen-riso-two img, video{
+  cursor: url("assets/project-cursor-06.png"), auto;
+}
+
+.laser-cut-type img, video{
+  cursor: url("assets/project-cursor-07.png"), auto;
+}
+
+
+
+.one{
+  position: absolute;
+  top: 2em;
+  left: 10em;
+  transform: rotate(10deg);
+  max-width: 15em;
+  z-index: 3;
+}
+
+.two{
+  position: absolute;
+  top: 7em;
+  right: 5em;
+  transform: rotate(-10deg);
+  max-width: 17em;
+  z-index: 4;
+}
+
+.three{
+  position: absolute;
+  top: 30em;
+  right: 30em;
+  transform: rotate(28deg);
+  max-width: 18em;
+}
+
+.four{
+  position: absolute;
+  top: 55em;
+  left: 2em;
+  transform: rotate(-14deg);
+  max-width: 14em;
+  z-index: 8;
+}
+
+.five{
+  position: absolute;
+  top: 38em;
+  right: 20em;
+  transform: rotate(20deg);
+  max-width: 15em;
+  z-index: 7;
+}
+
+.six{
+  position: absolute;
+  top: 2em;
+  right: 25em;
+  transform: rotate(-8deg);
+  max-width: 20em;
+}
+
+.seven{
+  position: absolute;
+  top: 30em;
+  right: 5em;
+  transform: rotate(-20deg);
+  max-width: 20em;
+  z-index: 5;
+}
+
+.eight{
+  position: absolute;
+  top: 23em;
+  left: 33em;
+  transform: rotate(5deg);
+  max-width: 12em;
+  z-index: 10;
+}
+
+.nine{
+  position: absolute;
+  top: 59em;
+  right: 40em;
+  transform: rotate(10deg);
+  max-width: 20em;
+  z-index: 4;
+}
+
+.ten{
+  position: absolute;
+  top: 60em;
+  right: 5em;
+  transform: rotate(-5deg);
+  max-width: 25em;
+}
+
+.eleven{
+  position: absolute;
+  top: 35em;
+  right: 15em;
+  transform: rotate(-10deg);
+  max-width: 10em;
+}
+
+.twelve{
+  position: absolute;
+  top: 15em;
+  left: 0;
+  transform: rotate(-20deg);
+  max-width: 20em;
+  z-index: 2;
+}
+
+.thirteen{
+  position: absolute;
+  top: 60em;
+  left: 23em;
+  transform: rotate(5deg);
+  max-width: 20em;
+  z-index: 2;
+}
+
+.fourteen{
+  position: absolute;
+  top: 20em;
+  right: 15em;
+  transform: rotate(15deg);
+  max-width: 20em;
+  z-index: 7;
+}
+
+.fifteen{
+  position: absolute;
+  top: 10em;
+  right: 20em;
+  transform: rotate(-5deg);
+  max-width: 20em;
+  z-index: 2;
+}
+
+.sixteen{
+  position: absolute;
+  top: 50em;
+  right: 15em;
+  transform: rotate(4deg);
+  max-width: 12em;
+  z-index: 9;
+}
+
+.seventeen{
+  position: absolute;
+  top: 30em;
+  left: 3em;
+  transform: rotate(4deg);
+  max-width: 20em;
+  z-index: 2;
+}
+
+.eighteen{
+  position: absolute;
+  top: 9em;
+  left: 16em;
+  transform: rotate(6deg);
+  max-width: 18em;
+  z-index: 2;
+}
+
+.nineteen{
+  position: absolute;
+  top: 40em;
+  left: 19em;
+  transform: rotate(6deg);
+  max-width: 15em;
+  z-index: 2;
+}
+
+.twenty{
+  position: absolute;
+  top: 48em;
+  left: 13em;
+  transform: rotate(-8deg);
+  max-width: 30em;
+  z-index: 2;
+}
+
+.twenty-one{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-8deg);
+  max-width: 15em;
+  z-index: 2;
+}
+
+.twenty-two{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(10deg);
+  max-width: 25em;
+  z-index: 1;
+}
+
+.twenty-three{
+  position: absolute;
+  top: 50em;
+  right: 2em;
+  transform: rotate(-8deg);
+  max-width: 15em;
+  z-index: 6;
+}
+
+.twenty-four{
+  position: absolute;
+  top: 30em;
+  right: 2em;
+  transform: rotate(14deg);
+  max-width: 15em;
+  z-index: 6;
+}
+
+.twenty-five{
+  position: absolute;
+  top: 65em;
+  right: 2em;
+  transform: rotate(30deg);
+  max-width: 15em;
+  z-index: 6;
+}
