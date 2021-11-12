@@ -1,0 +1,56 @@
+/* adjust typography defaults */
+@font-face {
+  font-family: "Terminal Grotesque";
+  src: url("./fonts/terminal-grotesque-webfont.woff2") format("woff2"),
+       url("./fonts/terminal-grotesque-webfont.woff") format("woff");
+}    
+
+
+
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+img{
+  max-width: 10em;
+  margin: 1em;
+}
+
+
+a{
+  color: black;
+  text-decoration: underline;
+  font-size: 3em;
+  font-family: "Terminal Grotesque";
+  line-height: 1.5em;
+}
+
+a:hover{
+  color: blue;
+}
+
+.index{
+  padding: 6em;
+}
+
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  left: 1em;
+}
+
+.bottom-nav{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  left: 1em;
+}
+
