@@ -10,26 +10,33 @@
 body {
   margin: 1rem;
   font-family: sans-serif;
-  background-color: black;
+  background-color: #fd5c14;
 }
 
 h1{
-  color: #fd5c14;
+  color: #fe0bdc;
   text-decoration: none;
-  font-size: 4em;
+  font-size: 6em;
   font-family: "Terminal Grotesque";
   line-height: 1.5em;
-  margin-left: 5em;
+  margin-left: 3em;
 }
 
 p{
   color: white;
+  font-family: "Terminal Grotesque";
+  font-size: 2em;
   width: 60%;
+  display: wrap;
 }
 
 .text{
   display: flex;
   justify-content: center;
   justify-items: center;
+}
+
+img{
+  margin-top: 2em;
 }
 

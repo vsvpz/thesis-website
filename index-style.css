@@ -1,0 +1,54 @@
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+
+/* images and videos max out at full width */
+
+
+body{
+  background-image: url("assets/background-home2.png");
+  background-size: cover;
+  margin: 0;
+}
+
+.link img{
+  max-width: 100%;
+  margin: 0;
+  cursor: url("assets/index-cursor.png"), auto;
+  transform: scale(1);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  opacity: 1;
+  position: absolute;
+}
+
+.link img:hover{
+  opacity: 0;
+}
+
+
+.hover-link img:hover{
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  position: absolute;
+}
+
+.index{
+  display: flex;
+  justify-items: center;
+  max-width: 100%;
+  justify-content: center;
+  transform: scale(.8);
+  margin-top: 0;
+}
+
+.hover:hover{
+  transform: scale(.95);
+}

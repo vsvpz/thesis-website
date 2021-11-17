@@ -22,7 +22,7 @@ a{
 }
 
 a:hover{
-  color: blue;
+  color: #fe0bdc;
   text-decoration: underline;
 }
 
@@ -30,6 +30,15 @@ a:hover{
   padding: 6em;
   max-width: 98%;
 }
+
+img, video{
+  mix-blend-mode: exclusion;
+}
+
+img:hover, video:hover{
+  mix-blend-mode: normal;
+}
+
 
 .top-nav{
   display: flex;
@@ -53,23 +62,23 @@ a:hover{
 }
 
 .photogram img, video{
-  cursor: url("assets/project-cursor-03.png"), auto;
+  cursor: url("assets/photogram-cursor.png"), auto;
 }
 
 .photogram-riso img, video{
-  cursor: url("assets/project-cursor-04.png"), auto;
+  cursor: url("assets/photogram-riso-cursor.png"), auto;
 }
 
 .kroy-wen-riso img, video{
-  cursor: url("assets/project-cursor-05.png"), auto;
+  cursor: url("assets/kroy-wen-riso-cursor.png"), auto;
 }
 
 .kroy-wen-riso-two img, video{
-  cursor: url("assets/project-cursor-06.png"), auto;
+  cursor: url("assets/kroy-wen-riso-two-cursor.png"), auto;
 }
 
 .laser-cut-type img, video{
-  cursor: url("assets/project-cursor-07.png"), auto;
+  cursor: url("assets/laser-cut-type-cursor.png"), auto;
 }
 
 
