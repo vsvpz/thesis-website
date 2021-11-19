@@ -117,7 +117,7 @@ img{
 }
 
 .define-text h1{
-  font-family: Anthony;
+  font-family: 'Anthony';
   font-size: 19em;
   color: yellow;
   font-weight: 100;
@@ -126,7 +126,7 @@ img{
 }
 
 .define-text p{
-  font-family: Anthony;
+  font-family: 'Anthony';
   color: yellow;
   font-size: 5em;
   line-height: 1.25em;

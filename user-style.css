@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Anthony";
+  src: url("./fonts/Anthony.woff2") format("woff2"),
+       url("./fonts/Anthony.woff") format("woff");
+}    
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  background-color: #fe0bdc;
+}
+
+img, video{
+  mix-blend-mode: normal;
+}
+
+.top-nav a, .bottom-nav a{
+  color: #00a306;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Terminal Grotesque";
+}
+
+a:hover{
+  color: #03a0f3;
+  text-decoration: underline;
+}
+
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  left: 1em;
+  z-index: 100;
+}
+
+.bottom-nav{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  left: 1em;
+  z-index: 100;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  }
+
+  
+  nav li a{
+    color: #03a0f3;
+    text-decoration: none;
+    font-size: 3em;
+    font-family: 'Anthony', sans-serif;
+  }
+  
+  nav li a:hover{
+    font-size: 5em;
+    color: white;
+  }
+  
+  nav {
+    display: inline-block;
+    margin-top: 3em;
+    }
+
+    nav ul li:nth-child(2) {
+      margin-left: 5em;
+      }
+    
+    
+    nav li {
+      display: inline-block;
+    }
+
+  
+    .one, .ten{
+      position: absolute;
+      top: 17em;
+      left: 10em;
+      transform: rotate(10deg);
+      max-width: 30em;
+      z-index: 3;
+    }
+    
+    .two, .eleven{
+      position: absolute;
+      top: 14em;
+      left: 40em;
+      transform: rotate(-10deg);
+      max-width: 23em;
+      z-index: 4;
+    }
+    
+    .three, .twelve{
+      position: absolute;
+      top: 30em;
+      left: 45em;
+      transform: rotate(28deg);
+      max-width: 18em;
+      z-index: 13;
+    }
+    
+    .four, .thirteen{
+      position: absolute;
+      top: 40em;
+      left: 10em;
+      transform: rotate(-14deg);
+      max-width: 25em;
+      z-index: 8;
+    }
+    
+    .five, .fourteen{
+      position: absolute;
+      top: 20em;
+      left: 60em;
+      transform: rotate(20deg);
+      max-width: 30em;
+      z-index: 7;
+    }
+    
+    .six, .fifteen{
+      position: absolute;
+      top: 35em;
+      left: 28em;
+      transform: rotate(90deg);
+      max-width: 30em;
+    }
+    
+    .seven, .sixteen{
+      position: absolute;
+      top: 30em;
+      left: 50em;
+      transform: rotate(-7deg);
+      max-width: 40em;
+      z-index: 5;
+    }
+    
+    .eight, .seventeen{
+      position: absolute;
+      top: 33em;
+      left: 88em;
+      transform: rotate(5deg);
+      max-width: 18em;
+      z-index: 10;
+    }
+    
+    .nine,.eighteen{
+      position: absolute;
+      top: 45em;
+      left: 80em;
+      transform: rotate(10deg);
+      max-width: 20em;
+      z-index: 4;
+    }
+    
+    
