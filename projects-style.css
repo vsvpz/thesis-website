@@ -13,12 +13,11 @@ body {
   background-color: #fd5c14;
 }
 
-a{
+.top-nav a, .bottom-nav a{
   color: white;
   text-decoration: none;
   font-size: 1.5em;
   font-family: "Terminal Grotesque";
-  line-height: 1.5em;
 }
 
 a:hover{
@@ -81,6 +80,18 @@ img:hover, video:hover{
   cursor: url("assets/laser-cut-type-cursor.png"), auto;
 }
 
+.compositions img, video{
+  cursor: url("assets/compositions-cursor.png"), auto;
+}
+
+.collage-logo-type img, video{
+  cursor: url("assets/collage-logo-type-cursor.png"), auto;
+}
+
+.homepage-cideo img, video{
+  cursor: url("assets/homepage-video-cursor.png"), auto;
+}
+
 
 
 .one{
@@ -88,14 +99,14 @@ img:hover, video:hover{
   top: 2em;
   left: 10em;
   transform: rotate(10deg);
-  max-width: 15em;
+  max-width: 30em;
   z-index: 3;
 }
 
 .two{
   position: absolute;
   top: 7em;
-  right: 5em;
+  left: 55em;
   transform: rotate(-10deg);
   max-width: 17em;
   z-index: 4;
@@ -104,14 +115,14 @@ img:hover, video:hover{
 .three{
   position: absolute;
   top: 30em;
-  right: 30em;
+  left: 65em;
   transform: rotate(28deg);
   max-width: 18em;
 }
 
 .four{
   position: absolute;
-  top: 55em;
+  top: 50em;
   left: 2em;
   transform: rotate(-14deg);
   max-width: 14em;
@@ -120,8 +131,8 @@ img:hover, video:hover{
 
 .five{
   position: absolute;
-  top: 38em;
-  right: 20em;
+  top: 20em;
+  left: 75em;
   transform: rotate(20deg);
   max-width: 15em;
   z-index: 7;
@@ -130,15 +141,15 @@ img:hover, video:hover{
 .six{
   position: absolute;
   top: 2em;
-  right: 25em;
+  left: 35em;
   transform: rotate(-8deg);
-  max-width: 20em;
+  max-width: 30em;
 }
 
 .seven{
   position: absolute;
   top: 30em;
-  right: 5em;
+  left: 90em;
   transform: rotate(-20deg);
   max-width: 20em;
   z-index: 5;
@@ -147,16 +158,16 @@ img:hover, video:hover{
 .eight{
   position: absolute;
   top: 23em;
-  left: 33em;
+  left: 28em;
   transform: rotate(5deg);
-  max-width: 12em;
+  max-width: 18em;
   z-index: 10;
 }
 
 .nine{
   position: absolute;
   top: 59em;
-  right: 40em;
+  left: 40em;
   transform: rotate(10deg);
   max-width: 20em;
   z-index: 4;
@@ -164,10 +175,10 @@ img:hover, video:hover{
 
 .ten{
   position: absolute;
-  top: 60em;
-  right: 5em;
+  top: 63em;
+  left: 55em;
   transform: rotate(-5deg);
-  max-width: 25em;
+  max-width: 30em;
 }
 
 .eleven{
@@ -175,15 +186,15 @@ img:hover, video:hover{
   top: 35em;
   right: 15em;
   transform: rotate(-10deg);
-  max-width: 10em;
+  max-width: 15em;
 }
 
 .twelve{
   position: absolute;
-  top: 15em;
-  left: 0;
-  transform: rotate(-20deg);
-  max-width: 20em;
+  top: 20em;
+  left: 5em;
+  transform: rotate(-10deg);
+  max-width: 28em;
   z-index: 2;
 }
 
@@ -198,72 +209,72 @@ img:hover, video:hover{
 
 .fourteen{
   position: absolute;
-  top: 20em;
-  right: 15em;
+  top: 5em;
+  left: 110em;
   transform: rotate(15deg);
-  max-width: 20em;
+  max-width: 25em;
   z-index: 7;
 }
 
 .fifteen{
   position: absolute;
-  top: 10em;
-  right: 20em;
-  transform: rotate(-5deg);
-  max-width: 20em;
+  top: 5em;
+  left: 65em;
+  transform: rotate(5deg);
+  max-width: 30em;
   z-index: 2;
 }
 
 .sixteen{
   position: absolute;
-  top: 50em;
-  right: 15em;
+  top: 60em;
+  left: 160em;
   transform: rotate(4deg);
-  max-width: 12em;
+  max-width: 20em;
   z-index: 9;
 }
 
 .seventeen{
   position: absolute;
   top: 30em;
-  left: 3em;
+  left: 130em;
   transform: rotate(4deg);
-  max-width: 20em;
+  max-width: 30em;
   z-index: 2;
 }
 
 .eighteen{
   position: absolute;
-  top: 9em;
-  left: 16em;
-  transform: rotate(6deg);
+  top: 40em;
+  left: 60em;
+  transform: rotate(8deg);
   max-width: 18em;
   z-index: 2;
 }
 
 .nineteen{
   position: absolute;
-  top: 40em;
-  left: 19em;
+  top: 25em;
+  left: 45em;
   transform: rotate(6deg);
-  max-width: 15em;
+  max-width: 25em;
   z-index: 2;
 }
 
 .twenty{
   position: absolute;
-  top: 48em;
-  left: 13em;
+  top: 40em;
+  left: 16em;
   transform: rotate(-8deg);
-  max-width: 30em;
+  max-width: 50em;
   z-index: 2;
 }
 
 .twenty-one{
   position: absolute;
-  top: 0;
+  top: 5em;
   left: 0;
-  transform: rotate(-8deg);
+  transform: rotate(8deg);
   max-width: 15em;
   z-index: 2;
 }
@@ -271,7 +282,7 @@ img:hover, video:hover{
 .twenty-two{
   position: absolute;
   top: 0;
-  right: 0;
+  left: 90em;
   transform: rotate(10deg);
   max-width: 25em;
   z-index: 1;
@@ -282,24 +293,159 @@ img:hover, video:hover{
   top: 50em;
   right: 2em;
   transform: rotate(-8deg);
-  max-width: 15em;
+  max-width: 25em;
   z-index: 6;
 }
 
 .twenty-four{
   position: absolute;
-  top: 30em;
-  right: 2em;
+  top: 20em;
+  left: 110em;
   transform: rotate(14deg);
-  max-width: 15em;
+  max-width: 25em;
   z-index: 6;
 }
 
 .twenty-five{
   position: absolute;
+  top: 40em;
+  left: 0em;
+  transform: rotate(4deg);
+  max-width: 12em;
+  z-index: 9;
+}
+
+.twenty-six{
+  position: absolute;
   top: 65em;
-  right: 2em;
-  transform: rotate(30deg);
-  max-width: 15em;
+  left: 2em;
+  transform: rotate(-10deg);
+  max-width: 25em;
   z-index: 6;
+}
+
+.twenty-seven{
+  position: absolute;
+  top: 0em;
+  left:130em;
+  transform: rotate(-7deg);
+  max-width: 25em;
+  z-index: 6;
+}
+
+.twenty-eight{
+  position: absolute;
+  top: 40em;
+  left:105em;
+  transform: rotate(10deg);
+  max-width: 25em;
+  z-index: 6;
+}
+
+.twenty-nine{
+  position: absolute;
+  top: 20em;
+  left:200em;
+  transform: rotate(-30deg);
+  max-width: 25em;
+  z-index: 6;
+}
+
+.thirty{
+  position: absolute;
+  top: 20em;
+  left: 165em;
+  transform: rotate(-5deg);
+  max-width: 30em;
+  z-index: 6;
+}
+
+.thirty-one{
+  position: absolute;
+  top: 2em;
+  left: 150em;
+  transform: rotate(8deg);
+  max-width: 25em;
+  z-index: 6;
+}
+
+.thirty-two{
+  position: absolute;
+  top: 15em;
+  left: 155em;
+  transform: rotate(-5deg);
+  max-width: 20em;
+  z-index: 6;
+}
+
+.thirty-three{
+  position: absolute;
+  top: 65em;
+  left: 80em;
+  transform: rotate(9deg);
+  max-width: 25em;
+  z-index: 6;
+}
+
+.thirty-four{
+  position: absolute;
+  top: 58em;
+  left: 128em;
+  transform: rotate(-90deg);
+  max-width: 30em;
+  z-index: 6;
+}
+
+.thirty-five{
+  position: absolute;
+  top: 40em;
+  left: 178em;
+  transform: rotate(-90deg);
+  max-width: 30em;
+  z-index: 6;
+}
+
+.thirty-six{
+  position: absolute;
+  top: 1em;
+  left: 175em;
+  transform: rotate(-10deg);
+  max-width: 30em;
+  z-index: 6;
+}
+
+.thirty-seven{
+  position: absolute;
+  top: 35em;
+  left: 155em;
+  transform: rotate(6deg);
+  max-width: 40em;
+  z-index: 1;
+}
+
+.thirty-eight{
+  position: absolute;
+  top: 63em;
+  left: 100em;
+  transform: rotate(-6deg);
+  max-width: 35em;
+  z-index: 1;
+}
+
+.thirty-nine{
+  position: absolute;
+  top: 63em;
+  left: 180em;
+  transform: rotate(6deg);
+  max-width: 35em;
+  z-index: 1;
+}
+
+.fourty{
+  position: absolute;
+  top: 50em;
+  left: 200em;
+  transform: rotate(90deg);
+  max-width: 35em;
+  z-index: 1;
 }

@@ -14,7 +14,7 @@ body {
 }
 
 h1{
-  color: #fe0bdc;
+  color: #00a306;
   text-decoration: none;
   font-size: 6em;
   font-family: "Terminal Grotesque";
@@ -23,20 +23,48 @@ h1{
 }
 
 p{
-  color: white;
+  color: blue;
   font-family: "Terminal Grotesque";
   font-size: 2em;
-  width: 60%;
   display: wrap;
-}
-
-.text{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
 }
 
 img{
   margin-top: 2em;
+  max-width: 20em;
+}
+
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  left: 1em;
+  z-index: 100;
+}
+
+.bottom-nav{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  left: 1em;
+  z-index: 100;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Terminal Grotesque";
+  line-height: 1.5em;
+}
+
+a:hover{
+  color: #fe0bdc;
+  text-decoration: underline;
 }
 

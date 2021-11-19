@@ -1,0 +1,23 @@
+/* adjust typography defaults */
+@font-face {
+  font-family: "Terminal Grotesque";
+  src: url("./fonts/terminal-grotesque-webfont.woff2") format("woff2"),
+       url("./fonts/terminal-grotesque-webfont.woff") format("woff");
+}    
+
+
+
+body {
+  background-image: url("assets/manifesto-poster-grey.jpg");
+  background-size: cover;
+  height: 140em;
+}
+
+.link{
+  position: absolute;
+  top: 129em;
+}
+
+.link img{
+  cursor: url("assets/index-cursor.png"), auto;
+}
