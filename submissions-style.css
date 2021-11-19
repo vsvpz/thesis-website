@@ -71,7 +71,7 @@ a:hover{
   transform: rotate(5deg);
   margin-left: 8em;
   margin-top: 1em;
-  color: #ff5cfb;
+  color: white;
 }
 
 .want:hover, .to:hover, .escape:hover{
@@ -84,7 +84,7 @@ a:hover{
   transform: rotate(10deg);
   margin-top: 2em;
   margin-left: 10em;
-  color: #ff5cfb;
+  color: white;
 }
 
 .escape{
@@ -92,7 +92,7 @@ a:hover{
   transform: rotate3d(1, 1, 1, 45deg);
   font-size: 7em;
   margin-left: 9em;
-  color: #ff5cfb;
+  color: white;
 }
 
 .submit{
