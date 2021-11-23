@@ -13,6 +13,13 @@ body {
   background-color: #fd5c14;
 }
 
+.picker{
+  position: absolute;
+  top: 3em;
+  left: 1em;
+  z-index: 90;
+}
+
 .top-nav a, .bottom-nav a{
   color: white;
   text-decoration: none;
