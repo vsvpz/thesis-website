@@ -143,14 +143,27 @@ a:hover{
 .videos video{
   max-width: 60em;
   clip-path: circle(8em at 165px);
-  margin-left: -10em;
+  margin-top: -10em;
 }
 
+
 .videos{
-  background-image: url("assets/photogram-riso-5.jpg");
+  background-image: url("assets/photogram-riso-2.jpg");
   background-size: cover, no-repeat;
+  padding-top: 2em;
   margin-top: 5em;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
+}
+.process{
+  position: absolute;
+  top: 80em;
+  left: 30em;
+  z-index: 30;
+  max-width: 40em;
+}
+
+.process-2{
+  position: absolute;
+  top: 7em;
+  left: 55em;
+  z-index: 30;
 }

@@ -14,7 +14,7 @@ body {
 }
 
 .picker{
-  position: absolute;
+  position: fixed;
   top: 3em;
   left: 1em;
   z-index: 90;

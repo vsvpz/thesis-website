@@ -160,8 +160,22 @@ img{
 }
 
 
-.compositions img{
-  max-width: 50em;
+.composition-1 img{
+  max-width: 20em;
+  padding: 4em;
+  z-index: 8;
+  position: relative;
+}
+
+.composition-2 img{
+  max-width: 35em;
+  padding: 4em;
+  z-index: 8;
+  position: relative;
+}
+
+.composition-3 img{
+  max-width: 70em;
   padding: 4em;
   z-index: 8;
   position: relative;
@@ -170,14 +184,14 @@ img{
 .compositions p{
   display: inline-block;
   font-family: Anthony;
-  font-size: 5em;
+  font-size: 3.25em;
   color: yellow;
   font-weight: 100;
   transform: rotate(60deg);
   transform: skewX(20deg);
   position: relative;
   background-color: blue;
-  padding: 1em;
+  padding: .5em;
   z-index: 8;
 }
 
