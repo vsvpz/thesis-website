@@ -52,3 +52,9 @@ body{
 .hover:hover{
   transform: scale(.95);
 }
+
+@media screen and (max-width: 55em){
+  .index{
+    margin-top: 12em;
+  }
+}
