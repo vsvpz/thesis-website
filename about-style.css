@@ -3,7 +3,13 @@
   font-family: "Terminal Grotesque";
   src: url("./fonts/terminal-grotesque-webfont.woff2") format("woff2"),
        url("./fonts/terminal-grotesque-webfont.woff") format("woff");
-}    
+} 
+
+@font-face {
+  font-family: "Typefesse Claire";
+  src: url("./fonts/typefesse_claire-obscure.woff2") format("woff2"),
+       url("./fonts/typefesse_claire-obscure.woff") format("woff");
+} 
 
 
 @keyframes example {
@@ -34,10 +40,11 @@ width: auto;
 }
 
 .mobile{
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 1.5em;
+  font-family: 'Typefesse Claire';
+  font-size: 2em;
   color: #fe0bdc;
   display: none;
+  text-align: center;
 }
 
 .esc img{
@@ -215,8 +222,8 @@ transform:rotate(-180deg);
     justify-items: center;
     align-items: center;
     width: 75%;
-    margin-top: 13em;
-    margin-left: 2em;
+    margin-top: 8em;
+    margin-left: .5em;
     animation-name: example;
     animation-duration: 3s;
     animation-timing-function: ease;
