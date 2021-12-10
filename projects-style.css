@@ -7,7 +7,6 @@
 
 
 body {
-  margin: 1rem;
   font-family: sans-serif;
   background-color: #fd5c14;
 }
@@ -39,6 +38,7 @@ a:hover{
   border-radius: 10px;
   border: 1px solid #03a0f3;
   color: #03a0f3;
+  padding: .05em;
   transform: scale(1);
   transition: .5s;
 }
@@ -46,6 +46,7 @@ a:hover{
 .info:hover{
   transform: scale(.95);
   transition: .5s;
+  cursor: url("assets/collage-logo-type-cursor.png"), auto;
 }
 
 .container{
@@ -56,6 +57,7 @@ a:hover{
   position: fixed;
   top: 2em;
   z-index: 1000;
+  margin-left: 0;
 }
 
 
@@ -64,24 +66,54 @@ a:hover{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 10em; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: #edff47; /* Fallback color */
+  background-color: rgba(237,255,71,0.4); /* Black w/ opacity */
   z-index: 1000;
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #edff47;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #03a0f3;
+  width: 35%;
+  font-family: 'Terminal Grotesque';
+  font-size: 1.25em;
+  color: #03a0f3;
+}
+
+.modal-content button{
+  font-family: 'Terminal Grotesque';
+  font-size: 1.25em;
+  width: auto;
+  background-color: #edff47;
+  border-radius: 10px;
+  border: 1px solid #03a0f3;
+  color: #03a0f3;
+  padding: 0;
+  transform: scale(1);
+  transition: .5s;
+  display: flex;
+  margin: auto;
+  padding: .5em;
+}
+
+.modal-content button:hover{
+  transform: scale(.95);
+  transition: .5s;
+  cursor: url("assets/collage-logo-type-cursor.png"), auto;
+}
+
+.buttons{
+  display: flex;
 }
 
 /* The Close Button */
@@ -94,9 +126,9 @@ a:hover{
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #03a0f3;
   text-decoration: none;
-  cursor: pointer;
+  cursor: url("assets/collage-logo-type-cursor.png"), auto;
 }
 
 .index{
@@ -106,10 +138,12 @@ a:hover{
 
 img, video{
   mix-blend-mode: exclusion;
+  transition: .5s;
 }
 
 img:hover, video:hover{
   mix-blend-mode: normal;
+  transition: .5s;
 }
 
 
