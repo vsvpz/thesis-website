@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Kaerukaeru";
+  src: url("./fonts/kaerukaeru-regular.woff2") format("woff2"),
+       url("./fonts/kaerukaeru-regular.woff") format("woff");
+}    
+
+@font-face {
+  font-family: "Terminal Grotesque";
+  src: url("./fonts/terminal-grotesque-webfont.woff2") format("woff2"),
+       url("./fonts/terminal-grotesque-webfont.woff") format("woff");
+}    
+
+
+
+@keyframes my-animation {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); } 
+  }
+
+  @-moz-keyframes banner {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes banner {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes banner {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }}
+
+  
+
+
+/* adjust typography defaults */
+body {
+  margin: 3em;
+  font-family: sans-serif;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+video{
+  max-width: 100%;
+}
+
+
+/* images and videos max out at full width */
+
+img{
+  max-width: 17em;
+  mix-blend-mode: exclusion;
+}
+
+.product-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  row-gap: 2em;
+}
+
+
+button{
+  display: flex;
+  margin: auto;
+  margin-top: 1em;
+  font-family: 'Kaerukaeru';
+  font-size: 1.5em;
+  padding: .5em;
+  color: white;
+  background-color: #00a306;
+  border-radius: 10px;
+  border: 1px solid #03a0f3;
+  transform: scale(1);
+  mix-blend-mode: exclusion;
+}
+
+button:hover{
+  transform: scale(.95);
+}
+
+#float img{
+-moz-animation: my-animation 15s linear infinite;
+-webkit-animation: my-animation 15s linear infinite;
+animation: my-animation 15s linear infinite;
+animation-direction: normal;
+}
+
+a{
+  text-decoration: none;
+}
+
+#banner{
+  height: auto;
+  overflow: hidden;
+}
+
+#banner h1{
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: banner 15s linear infinite;
+  -webkit-animation: banner 15s linear infinite;
+  animation: banner 15s linear infinite;
+  font-family: "Terminal Grotesque";
+  font-size: 3em;
+  color: yellow;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.banner{
+  width: 100%;
+}
