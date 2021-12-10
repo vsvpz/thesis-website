@@ -49,9 +49,18 @@ width: auto;
 
 .picker{
   position: fixed;
-  top: 3em;
+  top: 1em;
   left: 1em;
   z-index: 1000;
+}
+
+.picker p{
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  margin-bottom: .5em;
+  font-size: 1.5em;
+  font-family: "Terminal Grotesque";
 }
 
 .text{

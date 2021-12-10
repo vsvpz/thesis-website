@@ -5,6 +5,13 @@
        url("./fonts/terminal-grotesque-webfont.woff") format("woff");
 }    
 
+@keyframes my-animation {
+  0% { opacity: 1;; }
+  100% { 
+    display: none;
+    opacity: 0; } 
+  }
+
 
 body {
   font-family: sans-serif;
@@ -18,17 +25,41 @@ body {
   z-index: 90;
 } */
 
-.top-nav p, .top-nav a, .bottom-nav a{
+.top-nav p, .link{
   color: white;
   text-decoration: none;
   font-size: 1.5em;
   font-family: "Terminal Grotesque";
 }
 
+/* .instruction{
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  z-index: 1000;
+} */
+
+.instruction p{
+color: white;
+text-decoration: none;
+font-size: 1.5em;
+font-family: "Terminal Grotesque";
+width: 100%;
+  text-align: center;
+  height: 100%;
+  z-index: 3000;
+  position: fixed;
+  margin: auto;
+  top:50%;
+    -moz-animation: my-animation 10s  ;
+    -webkit-animation: my-animation 10s  ;
+    animation: my-animation 10s  ;
+    animation-iteration-count: 1;
+}
+
 .button p{
   color: white;
   text-decoration: none;
-  font-size: 2em;
   font-family: "Terminal Grotesque";
   margin: 0;
 }
@@ -38,12 +69,16 @@ body {
   border: none;
 }
 
+.modal-content a{
+  text-decoration: none;
+}
+
 .top-nav p{
   margin: 0;
   margin-bottom: .5em;
 }
 
-.button p:hover, a:hover{
+.button p:hover, .link:hover{
   color: #fe0bdc;
   text-decoration: underline;
 }
@@ -106,6 +141,12 @@ body {
 
 .buttons{
   display: flex;
+}
+
+.signup{
+  height: auto;
+  display: block;
+  position: relative;
 }
 
 /* The Close Button */

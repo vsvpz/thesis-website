@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Kaerukaeru";
+  src: url("./fonts/kaerukaeru-regular.woff2") format("woff2"),
+       url("./fonts/kaerukaeru-regular.woff") format("woff");
+}    
+
+@font-face {
+  font-family: "Terminal Grotesque";
+  src: url("./fonts/terminal-grotesque-webfont.woff2") format("woff2"),
+       url("./fonts/terminal-grotesque-webfont.woff") format("woff");
+}    
+
+
+/* adjust typography defaults */
+body {
+  margin: 3em;
+}
+
+video{
+  max-width: 100%;
+}
+
+button{
+  display: flex;
+  margin: auto;
+  margin-top: 1em;
+  font-family: 'Kaerukaeru';
+  font-size: 1.5em;
+  padding: .5em;
+  color: white;
+  background-color: #00a306;
+  border-radius: 10px;
+  border: 1px solid #03a0f3;
+  transform: scale(1);
+  mix-blend-mode: exclusion;
+  transition: .5s;
+}
+
+button:hover{
+  transform: scale(.95);
+  mix-blend-mode: normal;
+  transition: .5s;
+}
+
+.container{
+  width: 35%;
+  margin: auto;
+}
