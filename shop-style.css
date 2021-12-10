@@ -99,10 +99,13 @@ button{
   border: 1px solid #03a0f3;
   transform: scale(1);
   mix-blend-mode: exclusion;
+  transition: .5s;
 }
 
 button:hover{
   transform: scale(.95);
+  mix-blend-mode: normal;
+  transition: .5s;
 }
 
 #float img{
