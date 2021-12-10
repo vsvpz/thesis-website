@@ -11,55 +11,42 @@ body {
   background-color: #fd5c14;
 }
 
-.picker{
+/* .picker{
   position: fixed;
   top: 3em;
   left: 1em;
   z-index: 90;
-}
+} */
 
-.top-nav a, .bottom-nav a{
+.top-nav p, .top-nav a, .bottom-nav a{
   color: white;
   text-decoration: none;
   font-size: 1.5em;
   font-family: "Terminal Grotesque";
 }
 
-a:hover{
+.button p{
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: "Terminal Grotesque";
+  margin: 0;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+
+.top-nav p{
+  margin: 0;
+  margin-bottom: .5em;
+}
+
+.button p:hover, a:hover{
   color: #fe0bdc;
   text-decoration: underline;
 }
-
-.info{
-  font-family: 'Terminal Grotesque';
-  font-size: 5em;
-  width: auto;
-  background-color: #edff47;
-  border-radius: 10px;
-  border: 1px solid #03a0f3;
-  color: #03a0f3;
-  padding: .05em;
-  transform: scale(1);
-  transition: .5s;
-}
-
-.info:hover{
-  transform: scale(.95);
-  transition: .5s;
-  cursor: url("assets/collage-logo-type-cursor.png"), auto;
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  top: 2em;
-  z-index: 1000;
-  margin-left: 0;
-}
-
 
 /* The Modal (background) */
 .modal {
@@ -90,6 +77,10 @@ a:hover{
   color: #03a0f3;
 }
 
+.modal-content a button{
+  text-decoration: none;
+}
+
 .modal-content button{
   font-family: 'Terminal Grotesque';
   font-size: 1.25em;
@@ -104,6 +95,7 @@ a:hover{
   display: flex;
   margin: auto;
   padding: .5em;
+  text-decoration: none;
 }
 
 .modal-content button:hover{
@@ -160,6 +152,7 @@ img:hover, video:hover{
 .bottom-nav{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: auto;
   position: fixed;
   bottom: 1em;
