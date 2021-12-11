@@ -6,7 +6,8 @@
 }    
 
 @keyframes my-animation {
-  0% { opacity: 1;; }
+  0% { opacity: 1;
+    display: block; }
   100% { 
     display: none;
     opacity: 0; } 
@@ -32,12 +33,12 @@ body {
   font-family: "Terminal Grotesque";
 }
 
-/* .instruction{
+.instruction{
   width: 100%;
   margin: auto;
   height: 100%;
-  z-index: 1000;
-} */
+  z-index: 999;
+}
 
 .instruction p{
 color: white;
@@ -46,10 +47,10 @@ font-size: 1.5em;
 font-family: "Terminal Grotesque";
 width: 100%;
   text-align: center;
-  height: 100%;
   z-index: 3000;
   position: fixed;
   margin: auto;
+  opacity: 0;
   top:50%;
     -moz-animation: my-animation 10s  ;
     -webkit-animation: my-animation 10s  ;
@@ -94,22 +95,26 @@ width: 100%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #edff47; /* Fallback color */
-  background-color: rgba(237,255,71,0.4); /* Black w/ opacity */
+  background-color: #00a306; /* Fallback color */
+  background-color: rgba(0,163,6,0.4); /* Black w/ opacity */
   z-index: 1000;
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: #edff47;
   margin: auto;
   padding: 20px;
+  border: 1px solid #fd5c14;
   border-radius: 10px;
-  border: 1px solid #03a0f3;
+  background-color: #00a306;
   width: 35%;
   font-family: 'Terminal Grotesque';
   font-size: 1.25em;
-  color: #03a0f3;
+  color: white;
+}
+
+.modal-content p{
+  margin: 1em;
 }
 
 .modal-content a button{
@@ -120,10 +125,10 @@ width: 100%;
   font-family: 'Terminal Grotesque';
   font-size: 1.25em;
   width: auto;
-  background-color: #edff47;
+  color: white;
+  background-color: #00a306;
   border-radius: 10px;
-  border: 1px solid #03a0f3;
-  color: #03a0f3;
+  border: 1px solid #fd5c14;
   padding: 0;
   transform: scale(1);
   transition: .5s;
@@ -135,6 +140,7 @@ width: 100%;
 
 .modal-content button:hover{
   transform: scale(.95);
+  background-color: #03a0f3;
   transition: .5s;
   cursor: url("assets/collage-logo-type-cursor.png"), auto;
 }
@@ -151,7 +157,7 @@ width: 100%;
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #fd5c14;
   float: right;
   font-size: 28px;
   font-weight: bold;

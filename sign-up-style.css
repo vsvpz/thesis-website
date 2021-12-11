@@ -13,36 +13,84 @@
 
 /* adjust typography defaults */
 body {
-  margin: 3em;
+  margin: 0;
+  background-image: url("assets/background-home.png");
+  background-size: cover;
 }
 
 video{
   max-width: 100%;
 }
 
-button{
+img{
+  padding: 1em;
+}
+
+hr{
+  border: .5px solid #fd5c14;}
+
+.clearfix{
   display: flex;
+  justify-content: space-evenly;
+}
+
+button{
   margin: auto;
   margin-top: 1em;
-  font-family: 'Kaerukaeru';
+  font-family: 'Terminal Grotesque';
   font-size: 1.5em;
   padding: .5em;
   color: white;
   background-color: #00a306;
   border-radius: 10px;
-  border: 1px solid #03a0f3;
+  border: 1px solid #fd5c14;
   transform: scale(1);
-  mix-blend-mode: exclusion;
   transition: .5s;
 }
 
 button:hover{
   transform: scale(.95);
-  mix-blend-mode: normal;
   transition: .5s;
+  background-color: #03a0f3;
 }
 
 .container{
   width: 35%;
   margin: auto;
+  margin-top: 2em;
+  border: 1px solid #fd5c14;
+  border-radius: 10px;
+  background-color: #00a306;
+  padding: 20px;
+}
+
+label{
+  font-family: 'Terminal Grotesque';
+  font-size: 1.5em;
+  color: white;
+}
+
+b{
+  font-weight: normal;
+}
+
+input{
+  background-color: #03a0f3;
+  border: 1px solid #fd5c14;
+  width: 100%;
+  margin-top: .5em;
+  margin-bottom: 1em;
+  height: 1.5em;
+}
+
+.fields{
+  margin: 1em;
+}
+
+.checked{
+ margin-left: 0;
+}
+
+p{
+  color: white;
 }

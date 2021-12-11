@@ -74,6 +74,10 @@ img{
   mix-blend-mode: exclusion;
 }
 
+img:hover{
+  mix-blend-mode: normal;
+}
+
 .product-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
