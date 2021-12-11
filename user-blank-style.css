@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Anthony";
+  src: url("./fonts/Anthony.woff2") format("woff2"),
+       url("./fonts/Anthony.woff") format("woff");
+} 
+
+@font-face {
+  font-family: "Terminal Grotesque";
+  src: url("./fonts/terminal-grotesque-webfont.woff2") format("woff2"),
+       url("./fonts/terminal-grotesque-webfont.woff") format("woff");
+} 
+
+body {
+  margin: 1rem;
+  background-color: #03a0f3;
+}
+
+
+.top-nav p, .link{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Terminal Grotesque";
+}
+
+.button p{
+  color: white;
+  text-decoration: none;
+  font-family: "Terminal Grotesque";
+  margin: 0;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+
+.top-nav p{
+  margin: 0;
+  margin-bottom: .5em;
+}
+
+.button p:hover, .link:hover{
+  color: #fe0bdc;
+  text-decoration: underline;
+}
+
+
+a:hover{
+  color: #fd5c14;
+  text-decoration: underline;
+}
+
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  left: 1em;
+  z-index: 100;
+}
+
+.bottom-nav{
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  left: 1em;
+  z-index: 100;
+}
+
+.instruction{
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 50%;
+  left: 0;
+}
+
+.instruction button{
+  margin: auto;
+  font-family: 'Terminal Grotesque';
+  font-size: 1.5em;
+  padding: .5em;
+  color: white;
+  background-color: #00a306;
+  border-radius: 10px;
+  border: 1px solid #fd5c14;
+  transform: scale(1);
+  transition: .5s;
+  text-align: center;
+  z-index: 3000;
+  cursor: url("assets/collage-logo-type-cursor.png"), auto;
+  margin-left: 0;
+}
+
+.instruction button:hover{
+  transform: scale(.95);
+  transition: .5s;
+  background-color: #03a0f3;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10em; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #00a306; /* Fallback color */
+  background-color: rgba(0,163,6,0.4); /* Black w/ opacity */
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #fd5c14;
+  border-radius: 10px;
+  background-color: #00a306;
+  width: 35%;
+  font-family: 'Terminal Grotesque';
+  font-size: 1.25em;
+  color: white;
+}
+
+.modal-content p{
+  margin: 1em;
+}
+
+/* The Close Button */
+.close {
+  color: #fd5c14;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #03a0f3;
+  text-decoration: none;
+  cursor: url("assets/collage-logo-type-cursor.png"), auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+  }
+
+  
+  h1{
+    color: #fd5c14;
+    text-decoration: none;
+    font-size: 3em;
+    font-family: 'Anthony', sans-serif;
+  }
+

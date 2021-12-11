@@ -4,11 +4,116 @@
        url("./fonts/Anthony.woff") format("woff");
 } 
 
-#background-video {
+@keyframes float-one {
+  0% { transform: translatey(7em);
+  }
+  25% { transform: translatex(80em);
+  }
+  50% { transform: translatey(20em);
+  }
+  75% { transform: translatex(36em);
+  }
+  100% {
+    transform: translatey(40em); } 
+  }
+
+  @keyframes float-two {
+    0% { transform: translatey(-7em);
+    }
+    15% { transform: translatex(40em);
+    }
+    40% { transform: translatey(10em);
+    }
+    85% { transform: translatex(90em);
+    }
+    100% {
+      transform: translatey(10em); } 
+    }
+
+    @keyframes float-three {
+      0% { transform: translatey(20em);
+      }
+      32% { transform: translatex(50em);
+      }
+      40% { transform: translatey(-20em);
+      }
+      65% { transform: translatex(20em);
+      }
+      100% {
+        transform: translatey(40em); } 
+      }
+
+      @keyframes float-four {
+        0% { transform: translatex(60em);
+        }
+        65% { transform: translatey(30em);
+        }
+        40% { transform: translatey(2em);
+        }
+        85% { transform: translatex(50em);
+        }
+        100% {
+          transform: translatey(30em); } 
+        }
+
+        @keyframes float-five {
+          0% { transform: translatex(90em);
+          }
+          35% { transform: translatex(10em);
+          }
+          60% { transform: translatey(-50em);
+          }
+          85% { transform: translatex(80em);
+          }
+          100% {
+            transform: translatex(8em); } 
+          }
+
+          @keyframes float-six {
+            0% { transform: translatey(40em);
+            }
+            11% { transform: translatex(60em);
+            }
+            30% { transform: translatey(31em);
+            }
+            85% { transform: translatex(60em);
+            }
+            100% {
+              transform: translatex(20em); } 
+            }
+
+            @keyframes float-seven {
+              0% { transform: translatey(20em);
+              }
+              22% { transform: translatex(20em);
+              }
+              30% { transform: translatey(-40em);
+              }
+              85% { transform: translatex(70em);
+              }
+              100% {
+                transform: translatex(40em); } 
+              }
+
+              @keyframes float-eight {
+                0% { transform: translatey(2em);
+                }
+                22% { transform: translatex(40em);
+                }
+                40% { transform: translatey(-30em);
+                }
+                85% { transform: translatex(30em);
+                }
+                100% {
+                  transform: translatex(90em); } 
+                }
+  
+
+/* #background-video {
   width: 100%;
   height: 5em;
   object-fit: cover;
-}
+} */
 
 /* adjust typography defaults */
 body {
@@ -144,20 +249,81 @@ header {
     font-size: 3em;
     font-family: 'Anthony', sans-serif;
   }
-
+/* 
   .experiments{
-  margin: auto;
-  width: 100%;
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  row-gap: 2em;
+  } */
+
+  .experiments img, .experiments video{
+    max-width: 25em;
+    position: absolute;
   }
 
-    .ten{
-      background-image: url("assets/laser-cut-type-4.jpeg");
-  width: 100%;
-  height: 5em;
-  mix-blend-mode: exclusion;
-  padding: 1em;
+  #experiments .ten img{
+      animation: float-one 15s linear infinite;
+      animation-direction: reverse;
+      mix-blend-mode: exclusion;
+      cursor: url("assets/laser-cut-type-cursor.png"), auto;
     }
-    
+
+    #experiments .eleven video{
+      animation: float-two 15s linear infinite;
+      animation-direction: reverse;
+      mix-blend-mode: exclusion;
+      cursor: url("assets/compositions-cursor.png"), auto;
+    }
+
+    #experiments .twelve img{
+      animation: float-three 15s linear infinite;
+      animation-direction: reverse;
+      mix-blend-mode: exclusion;
+      cursor: url("assets/kroy-wen-riso-two-cursor.png"), auto;
+    }
+
+    #experiments .thirteen img{
+      animation: float-four 15s linear infinite;
+      animation-direction: reverse;
+      mix-blend-mode: exclusion;
+      cursor: url("assets/photogram-riso-cursor.png"), auto;
+    }
+
+    #experiments .fourteen video{
+      animation: float-five 15s linear infinite;
+      animation-direction: reverse;
+      mix-blend-mode: exclusion;
+      cursor: url("assets/homepage-video-cursor.png"), auto;
+    }
+
+    #experiments .fifteen img{
+      animation: float-six 15s linear infinite;
+      animation-direction: reverse;
+      mix-blend-mode: exclusion;
+      cursor: url("assets/photogram-cursor.png"), auto;
+    }
+
+    #experiments .sixteen img{
+      animation: float-seven 15s linear infinite;
+      animation-direction: reverse;
+      mix-blend-mode: exclusion;
+      cursor: url("assets/collage-logo-type-cursor.png"), auto;
+    }
+
+
+    #experiments .seventeen video{
+      animation: float-eight 15s linear infinite;
+      animation-direction: reverse;
+      mix-blend-mode: exclusion;
+      cursor: url("assets/kroy-wen-riso-cursor.png"), auto;
+    }
+
+/*     
     .eleven{
   width: 100%;
   height: 5em;
@@ -226,5 +392,5 @@ header {
       max-width: 20em;
       z-index: 4;
     }
-    
-    
+     */
+     

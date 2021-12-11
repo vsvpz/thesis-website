@@ -46,6 +46,7 @@ button{
   border: 1px solid #fd5c14;
   transform: scale(1);
   transition: .5s;
+  cursor: url("assets/collage-logo-type-cursor.png"), auto;
 }
 
 button:hover{

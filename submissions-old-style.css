@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Lack Italic";
+  src: url("./fonts/lack-italic-webfont.woff2") format("woff2"),
+       url("./fonts/lack-italic-webfont.woff") format("woff");
+}    
+
+@font-face {
+  font-family: "Lack Line Italic";
+  src: url("./fonts/lack-line-italic-webfont.woff2") format("woff2"),
+       url("./fonts/lack-line-italic-webfont.woff") format("woff");
+}    
+
+@font-face {
+  font-family: "Lack Line Regular";
+  src: url("./fonts/lack-line-regular-webfont.woff2") format("woff2"),
+       url("./fonts/lack-line-regular-webfont.woff") format("woff");
+}    
+
+@font-face {
+  font-family: "Lack Regular";
+  src: url("./fonts/lack-regular.woff2") format("woff2"),
+       url("./fonts/lack-regular.woff") format("woff");
+}    
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  background-image: url("assets/background-home.png");
+}
+
+img{
+  max-width:15em;
+}
+
+.top-nav a, .bottom-nav a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Terminal Grotesque";
+}
+
+a:hover{
+  color: #fe0bdc;
+  text-decoration: underline;
+}
+
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  left: 1em;
+  z-index: 100;
+}
+
+.bottom-nav{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  left: 1em;
+  z-index: 100;
+}
+
+.want{
+  font-family: 'Lack Regular', sans-serif;
+  font-size: 4em;
+  transform: rotate(5deg);
+  margin-left: 8em;
+  margin-top: 1em;
+  color: white;
+}
+
+.want:hover, .to:hover, .escape:hover{
+  transform: rotate(0deg);
+}
+
+.to{
+  font-family: 'Lack Italic', sans-serif;
+  font-size: 5em;
+  transform: rotate(10deg);
+  margin-top: 2em;
+  margin-left: 10em;
+  color: white;
+}
+
+.escape{
+  font-family: 'Lack Line Italic', sans-serif;
+  transform: rotate3d(1, 1, 1, 45deg);
+  font-size: 7em;
+  margin-left: 9em;
+  color: white;
+}
+
+.submit{
+  max-width: 22em;
+  position: absolute;
+  top: 10em;
+  left: 4em;
+  transform: rotate(-5deg);
+}
+
+.requirements{
+  max-width: 40em;
+  position: absolute;
+  transform: rotate(-10deg);
+  top: 25em;
+  left: 5em;
+}
+
+p, li{
+  color: white;
+  font-family: 'Lack Regular', sans-serif;
+  font-size: 1.4em;
+}
+
+.upload{
+  max-width: 40em;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: 25em;
+  left: 4em;
+}
+
+.link img{
+  margin: 0;
+  cursor: url("assets/index-cursor.png"), auto;
+  transform: scale(1);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  opacity: 1;
+  position: absolute;
+}
+
+.link img:hover{
+  opacity: 0;
+}
+
+
+.hover-link img:hover{
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  position: absolute;
+  margin: 0;
+}
+
+.hover{
+margin-left: 50em;
+}
+
+.hover:hover{
+  transform: scale(.95);
+}
