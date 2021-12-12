@@ -17,12 +17,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="/upload-script.js" defer></script>
 
   </head>
   <body>
     <div class="container">
-      <img src="assets/sign-up.png">
+      <img src="assets/upload.png">
       <hr>
       <p>Submit a design experiment to be archived on our website. You can make anything you like, as long as you’re not placing any constraints on yourself and experimenting with new making methods - you never know what might happen.</p>
 
@@ -43,10 +43,18 @@
       </label></br> -->
 
       <div class="clearfix">
-        <div class="cancelbtn"><a href="user.html"><button >cancel</button></a></div>
-        <div class="submit"><a href="user-blank.html"><button type="submit" class="signupbtn">upload</button></a></div>
-      </div>
+        <div class="cancelbtn"><a href="user.html"><button>cancel</button></a></div>
+        <div class="fileupload">
+          <button class="uploadfile">upload<input type="file" name="myfile" /></button>
+        <!-- <input type="file" name="myfile" /> -->
+          </div>	
     </div>
 </div>
   </body>
 </html>
+
+
+<!-- <div class="submit"><a href="user-blank.html"><button type="submit" class="signupbtn">upload</button></a></div>
+        <input type="file" name="myfile" />
+      </div> -->
+
